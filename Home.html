@@ -42,6 +42,11 @@
         a:hover {
             color: #1B4F72 !important;
         }
+
+        .carousel{
+            z-index:-1;
+        }
+
     </style>
 </head>
 <body style="background-color: #FAFC1C;">
@@ -65,13 +70,19 @@
                     Products
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Fruits</a></li>
+                    <li><a class="dropdown-item" href="#">Vegetables</a></li>
+                    <li><a class="dropdown-item" href="#">Green Leafy Vegetables</a></li>
                 </ul>
             </li>
-
         </ul>
+        <div class="container-fluid">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+
     </nav>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -112,20 +123,20 @@
             <div class="col-lg-3 col-md-3">
                 <div class="card" style="width: 18rem;">
                     <img src="fresh-methi-500x500.png" class="card-img-top" alt="">
-                    <div class="card-body">
+                    <div class="card-body" data-id="1">
                         <h5 class="card-title">Fenugreek</h5>
                         <p class="card-text">Rs.20</p>
-                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">Add To Card</a>
+                        <a href="Vegetables.html" style="background-color: darkkhaki;" class="btn btn-primary">View Product</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3">
                 <div class="card" style="width: 18rem;">
                     <img src="green-spinach-500x500.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
+                    <div class="card-body" data-id="2">
                         <h5 class="card-title">Spinach</h5>
                         <p class="card-text">Rs.15</p>
-                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">Add To Card</a>
+                        <a href="Vegetables.html" style="background-color: darkkhaki;" class="btn btn-primary">View Product</a>
                     </div>
                 </div>
             </div>
@@ -135,7 +146,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Coriander</h5>
                         <p class="card-text">Rs.25</p>
-                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">Add To Card</a>
+                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">View Product</a>
                     </div>
                 </div>
             </div>
@@ -145,7 +156,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Dill Leaves</h5>
                         <p class="card-text">Rs.18</p>
-                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">Add To Card</a>
+                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">View Product</a>
                     </div>
                 </div>
             </div>
@@ -165,7 +176,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Potatoes</h5>
                         <p class="card-text">Rs.15/kg</p>
-                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">Add To Card</a>
+                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">View Product</a>
                     </div>
                 </div>
             </div>
@@ -175,7 +186,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Brinjal</h5>
                         <p class="card-text">Rs.20/kg</p>
-                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">Add To Card</a>
+                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">View Product</a>
                     </div>
                 </div>
             </div>
@@ -185,7 +196,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Tomato</h5>
                         <p class="card-text">Rs.18/kg</p>
-                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">Add To Card</a>
+                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">View Product</a>
                     </div>
                 </div>
             </div>
@@ -195,7 +206,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Green Chillies</h5>
                         <p class="card-text">Rs.12/kg</p>
-                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">Add To Card</a>
+                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">View Product</a>
                     </div>
                 </div>
             </div>
@@ -213,7 +224,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Apple</h5>
                         <p class="card-text">Rs.150/kg</p>
-                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">Add To Card</a>
+                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">View Product</a>
                     </div>
                 </div>
             </div>
@@ -223,7 +234,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Oranges</h5>
                         <p class="card-text">Rs.120/kg</p>
-                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">Add To Card</a>
+                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">View Product</a>
                     </div>
                 </div>
             </div>
@@ -233,7 +244,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Grapes</h5>
                         <p class="card-text">Rs.135/kg</p>
-                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">Add To Card</a>
+                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">View Product</a>
                     </div>
                 </div>
             </div>
@@ -243,63 +254,22 @@
                     <div class="card-body">
                         <h5 class="card-title">Mango</h5>
                         <p class="card-text">Rs.200/kg</p>
-                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">Add To Card</a>
+                        <a href="#" style="background-color: darkkhaki;" class="btn btn-primary">View Product</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+   
 
-    
+        
         <footer class="page-footer font-small cyan darken-3">
 
-            <!-- Footer Elements -->
-            <div class="container">
-
-                <!-- Grid row-->
-                <div class="row">
-
-                    <!-- Grid column -->
-                    <div class="col-md-12 py-5">
-                        <div class="mb-5 flex-center">
-
-                            <!-- Facebook -->
-                            <a class="fb-ic">
-                                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                            </a>
-                            <!-- Twitter -->
-                            <a class="tw-ic">
-                                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                            </a>
-                            <!-- Google +-->
-                            <a class="gplus-ic">
-                                <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                            </a>
-                            <!--Linkedin -->
-                            <a class="li-ic">
-                                <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                            </a>
-                            <!--Instagram-->
-                            <a class="ins-ic">
-                                <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                            </a>
-                            <!--Pinterest-->
-                            <a class="pin-ic">
-                                <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Grid column -->
-
-                </div>
-                <!-- Grid row-->
-
-            </div>
-            <!-- Footer Elements -->
+           
 
 
             <div class="footer-copyright text-center py-3">
-                © 2020 Copyright:
+                © 2022 Copyright:
                 <a href="/"> MyVeges.com</a>
             </div>
 
